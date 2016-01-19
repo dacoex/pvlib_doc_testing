@@ -1,0 +1,87 @@
+.. _variables_style_rules:
+
+
+Variables and Symbols
+=====================
+
+
+There is a convention on consistent variable names throughout the library:
+
+.. csv-table:: List of used Symbols and Variables
+   :file: _static/variables_style-rules.csv
+   :delim: ;
+   :header-rows: 1
+   :widths: 5, 5
+   :stub-columns: 1
+   
+For an definition and further help on symbols and units refer to the following sources:
+
+
+* `Reference Variable List by PVPMC <https://pvpmc.sandia.gov/resources/variable-list/>`_
+* with technical focus in `IEC 61724:1998 -- Photovoltaic system performance monitoring - Guidelines for measurement, data exchange and analysis <https://webstore.iec.ch/publication/5733>`_ ; the Indian Standard referencing the global IEC standard is available online: `IS/IEC 61724 (1998) <https://law.resource.org/pub/in/bis/S05/is.iec.61724.1998.pdf>`_
+* with physics focus:
+
+  * Explanation of Solar irradiation and solar geometry by `SoDa Service <http://www.soda-pro.com/home>`_ and partner pages (http://www.soda-is.com/, http://pro.soda-is.com/)
+  * `Acronyms, Terminology and Units <http://www.soda-pro.com/help/general/acronyms-terminology-and-units>`_
+  * `Plane orientations and radiation components <http://www.soda-pro.com/help/general/plane-orientations-and-radiation-components>`_
+  * `Time references <http://www.soda-pro.com/help/general/time-references>`_
+  * `Units and conversion tool <http://www.soda-is.com/eng/education/units.html>`_
+  * `Terminology: definitions of the main quantities. <http://www.soda-is.com/eng/education/terminology.html>`_
+  * `Acronyms in solar radiation <http://www.soda-is.com/eng/education/acronymes.html>`_ (more extensive list)
+
+  
+.. _test:
+
+List Test acc. http://www.sphinx-doc.org/en/stable/rest.html#lists-and-quote-like-blocks
+
+* This is a bulleted list.
+* It has two items, the second
+  item uses two lines.
+
+1. This is a numbered list.
+2. It has two items too.
+
+#. This is a numbered list.
+#. It has two items too.
+
+
+* this is
+* a list
+
+  * with a nested list
+  * and some subitems
+
+* and here the parent list continues
+
+
+.. list-table:: Frozen Delights!
+   :widths: 15 10 30
+   :header-rows: 1
+
+   * - Treat
+     - Quantity
+     - Description
+   * - Albatross
+     - 2.99
+     - On a stick!
+   * - Crunchy Frog
+     - 1.49
+     - If we took the bones out, it wouldn't be
+       crunchy, now would it?
+   * - Gannet Ripple
+     - 1.99
+     - On a stick!
+
+
+.. csv-table::
+    :header: Header1, Header2, Header3
+
+    A, B, "These lines appear as one line, 
+    even though they are written in two lines."
+    C, D, "| These lines appear as two lines, 
+    | but they are indented, and my OCD will simply not allow it."
+    E, F, "| If I continue this line in another line,
+    it will appear in a new line."
+    G, H, "If there is a blank line between the two lines,
+
+    there will be a blank line between the lines."

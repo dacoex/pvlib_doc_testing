@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Variables and Symbols &mdash; pvlib local test 2 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="pvlib local test 2 documentation" href="index.html" />
+    <link rel="prev" title="Welcome to pvlib local test’s documentation!" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="variables-and-symbols">
+<span id="variables-style-rules"></span><h1>Variables and Symbols<a class="headerlink" href="#variables-and-symbols" title="Permalink to this headline">¶</a></h1>
+<p>There is a convention on consistent variable names throughout the library:</p>
+<table border="1" class="docutils" id="id1">
+<caption><span class="caption-text">List of used Symbols and Variables</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head stub">variable</th>
+<th class="head">description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><th class="stub">tz</th>
+<td>timezone</td>
+</tr>
+<tr class="row-odd"><th class="stub">latitude</th>
+<td>latitude</td>
+</tr>
+<tr class="row-even"><th class="stub">longitude</th>
+<td>longitude</td>
+</tr>
+<tr class="row-odd"><th class="stub">dni</th>
+<td>direct normal irradiance</td>
+</tr>
+<tr class="row-even"><th class="stub">dni_extra</th>
+<td>direct normal irradiance at top of atmosphere (extraterrestrial)</td>
+</tr>
+<tr class="row-odd"><th class="stub">dhi</th>
+<td>diffuse horizontal irradiance</td>
+</tr>
+<tr class="row-even"><th class="stub">ghi</th>
+<td>global horizontal irradiance</td>
+</tr>
+<tr class="row-odd"><th class="stub">aoi</th>
+<td>angle of incidence</td>
+</tr>
+<tr class="row-even"><th class="stub">aoi_projection</th>
+<td>cos(aoi)</td>
+</tr>
+<tr class="row-odd"><th class="stub">airmass</th>
+<td>airmass</td>
+</tr>
+<tr class="row-even"><th class="stub">airmass_relative</th>
+<td>relative airmass</td>
+</tr>
+<tr class="row-odd"><th class="stub">airmass_absolute</th>
+<td>absolute airmass</td>
+</tr>
+<tr class="row-even"><th class="stub">poa_ground_diffuse</th>
+<td>in plane ground reflected irradiation</td>
+</tr>
+<tr class="row-odd"><th class="stub">poa_direct</th>
+<td>direct/beam irradiation in plane</td>
+</tr>
+<tr class="row-even"><th class="stub">poa_diffuse</th>
+<td>total diffuse irradiation in plane. sum of ground and sky diffuse.</td>
+</tr>
+<tr class="row-odd"><th class="stub">poa_global</th>
+<td>global irradiation in plane. sum of diffuse and beam projection.</td>
+</tr>
+<tr class="row-even"><th class="stub">poa_sky_diffuse</th>
+<td>diffuse irradiation in plane from scattered light in the atmosphere (without ground reflected irradiation)</td>
+</tr>
+<tr class="row-odd"><th class="stub">surface_tilt</th>
+<td>tilt angle of the surface</td>
+</tr>
+<tr class="row-even"><th class="stub">surface_azimuth</th>
+<td>azimuth angle of the surface</td>
+</tr>
+<tr class="row-odd"><th class="stub">solar_zenith</th>
+<td>zenith angle of the sun in degrees</td>
+</tr>
+<tr class="row-even"><th class="stub">apparent_zenith</th>
+<td>refraction-corrected solar zenith angle in degrees</td>
+</tr>
+<tr class="row-odd"><th class="stub">solar_azimuth</th>
+<td>azimuth angle of the sun in degrees East of North</td>
+</tr>
+<tr class="row-even"><th class="stub">temp_cell</th>
+<td>temperature of the cell</td>
+</tr>
+<tr class="row-odd"><th class="stub">temp_module</th>
+<td>temperature of the module</td>
+</tr>
+<tr class="row-even"><th class="stub">temp_air</th>
+<td>temperature of the air</td>
+</tr>
+<tr class="row-odd"><th class="stub">temp_dew</th>
+<td>dewpoint temperature</td>
+</tr>
+<tr class="row-even"><th class="stub">relative_humidity</th>
+<td>relative humidity</td>
+</tr>
+<tr class="row-odd"><th class="stub">v_mp, i_mp, p_mp</th>
+<td>module voltage, current, power at the maximum power point</td>
+</tr>
+<tr class="row-even"><th class="stub">v_oc</th>
+<td>open circuit module voltage</td>
+</tr>
+<tr class="row-odd"><th class="stub">i_sc</th>
+<td>short circuit module current</td>
+</tr>
+<tr class="row-even"><th class="stub">i_x, i_xx</th>
+<td>Sandia Array Performance Model IV curve parameters</td>
+</tr>
+<tr class="row-odd"><th class="stub">effective_irradiance</th>
+<td>effective irradiance</td>
+</tr>
+<tr class="row-even"><th class="stub">photocurrent</th>
+<td>photocurrent</td>
+</tr>
+<tr class="row-odd"><th class="stub">saturation_current</th>
+<td>diode saturation current</td>
+</tr>
+<tr class="row-even"><th class="stub">resistance_series</th>
+<td>series resistance</td>
+</tr>
+<tr class="row-odd"><th class="stub">resistance_shunt</th>
+<td>shunt resistance</td>
+</tr>
+<tr class="row-even"><th class="stub">tf</th>
+<td>transposition factor, the gain ration of the radiation in inclinded plane to horizontal plane: <span class="math">\(\frac{poa\_global}{ghi}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>For an definition and further help on symbols and units refer to the following sources:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://pvpmc.sandia.gov/resources/variable-list/">Reference Variable List by PVPMC</a></li>
+<li>with technical focus in <a class="reference external" href="https://webstore.iec.ch/publication/5733">IEC 61724:1998 &#8211; Photovoltaic system performance monitoring - Guidelines for measurement, data exchange and analysis</a> ; the Indian Standard referencing the global IEC standard is available online: <a class="reference external" href="https://law.resource.org/pub/in/bis/S05/is.iec.61724.1998.pdf">IS/IEC 61724 (1998)</a></li>
+<li>with physics focus:<ul>
+<li>Explanation of Solar irradiation and solar geometry by <a class="reference external" href="http://www.soda-pro.com/home">SoDa Service</a> and partner pages (<a class="reference external" href="http://www.soda-is.com/">http://www.soda-is.com/</a>, <a class="reference external" href="http://pro.soda-is.com/">http://pro.soda-is.com/</a>)</li>
+<li><a class="reference external" href="http://www.soda-pro.com/help/general/acronyms-terminology-and-units">Acronyms, Terminology and Units</a></li>
+<li><a class="reference external" href="http://www.soda-pro.com/help/general/plane-orientations-and-radiation-components">Plane orientations and radiation components</a></li>
+<li><a class="reference external" href="http://www.soda-pro.com/help/general/time-references">Time references</a></li>
+<li><a class="reference external" href="http://www.soda-is.com/eng/education/units.html">Units and conversion tool</a></li>
+<li><a class="reference external" href="http://www.soda-is.com/eng/education/terminology.html">Terminology: definitions of the main quantities.</a></li>
+<li><a class="reference external" href="http://www.soda-is.com/eng/education/acronymes.html">Acronyms in solar radiation</a> (more extensive list)</li>
+</ul>
+</li>
+</ul>
+<p id="test">List Test acc. <a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html#lists-and-quote-like-blocks">http://www.sphinx-doc.org/en/stable/rest.html#lists-and-quote-like-blocks</a></p>
+<ul class="simple">
+<li>This is a bulleted list.</li>
+<li>It has two items, the second
+item uses two lines.</li>
+</ul>
+<ol class="arabic simple">
+<li>This is a numbered list.</li>
+<li>It has two items too.</li>
+<li>This is a numbered list.</li>
+<li>It has two items too.</li>
+</ol>
+<ul class="simple">
+<li>this is</li>
+<li>a list<ul>
+<li>with a nested list</li>
+<li>and some subitems</li>
+</ul>
+</li>
+<li>and here the parent list continues</li>
+</ul>
+<table border="1" class="docutils" id="id2">
+<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id2" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="27%" />
+<col width="18%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Treat</th>
+<th class="head">Quantity</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Albatross</td>
+<td>2.99</td>
+<td>On a stick!</td>
+</tr>
+<tr class="row-odd"><td>Crunchy Frog</td>
+<td>1.49</td>
+<td>If we took the bones out, it wouldn&#8217;t be
+crunchy, now would it?</td>
+</tr>
+<tr class="row-even"><td>Gannet Ripple</td>
+<td>1.99</td>
+<td>On a stick!</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header1</th>
+<th class="head">Header2</th>
+<th class="head">Header3</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>A</td>
+<td>B</td>
+<td>These lines appear as one line,
+even though they are written in two lines.</td>
+</tr>
+<tr class="row-odd"><td>C</td>
+<td>D</td>
+<td><div class="first last line-block">
+<div class="line">These lines appear as two lines,</div>
+<div class="line">but they are indented, and my OCD will simply not allow it.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>E</td>
+<td>F</td>
+<td><div class="first line-block">
+<div class="line">If I continue this line in another line,</div>
+</div>
+<p class="last">it will appear in a new line.</p>
+</td>
+</tr>
+<tr class="row-odd"><td>G</td>
+<td>H</td>
+<td><p class="first">If there is a blank line between the two lines,</p>
+<p class="last">there will be a blank line between the lines.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to pvlib local test&#8217;s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/variables_style_rules.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, pvlib.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.6</a>
+      
+      |
+      <a href="_sources/variables_style_rules.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
